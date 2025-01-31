@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Femicide Awareness in Kenya - Understanding, Preventing, and Reporting Femicide.">
+    <title>Femicide Awareness in Kenya</title>
+    <link rel="stylesheet" href="Awareness-Page.css">
+</head>
+<body>
+
+    <header>
+        Femicide Awareness in Kenya
+    </header>
+
+    <section class="intro-section">
+        <img class="image-banner" src="femicide banner.jpg" alt="Femicide Awareness Banner">
+        <div class="section-content">
+            <p><span class="highlight">Femicide</span> is the killing of women because of their gender. In Kenya, this crime is tragically on the rise. This page aims to raise awareness, share crucial information on prevention, and provide resources for those affected.</p>
+            <p>Femicide doesn’t just affect the victim—it destroys families, communities, and nations. Let’s take a stand together to prevent this violence and create a society where women feel safe and valued.</p>
+        </div>
+    </section>
+
+    <section class="statistics-section">
+        <div class="section-title">Key Statistics</div>
+        <div class="section-content">
+            <div class="statistic">
+                <p><strong>Over 2000 women</strong> are killed in Kenya every year due to gender-based violence.</p>
+            </div>
+            <div class="statistic">
+                <p><strong>80% of femicides</strong> are committed by intimate partners or family members.</p>
+            </div>
+            <div class="statistic">
+                <p><strong>Femicide victims</strong> often experience years of abuse before the fatal incident.</p>
+            </div>
+    
+            <!-- Pie Chart Section -->
+            <canvas id="femicidePieChart"></canvas>
+            <p>Visual representation of femicide statistics in Kenya.</p>
+        </div>
+    </section>
+    
+
+    <section class="prevention-section">
+        <div class="section-title">Preventing Femicide</div>
+        <div class="section-content">
+            <p>It’s essential to know the signs and take steps to prevent femicide. Here’s how you can help:</p>
+            <ul>
+                <li>Recognize early signs of abuse like controlling behavior, jealousy, and violence.</li>
+                <li>Offer support to friends or family members in abusive relationships.</li>
+                <li>Encourage open conversations about relationships and gender equality.</li>
+                <li>Report incidents of violence to the police or a helpline.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="resources-section">
+        <div class="section-title">Resources & Support</div>
+        <div class="section-content">
+            <p>If you or someone you know is experiencing abuse, help is available. Here are some resources:</p>
+            <ul class="resources-list">
+                <li><strong>FIDA Kenya:</strong> Provides legal support for victims of domestic violence.</li>
+                <li><strong>Women’s Empowerment Network:</strong> Offers counseling and shelter for survivors of abuse.</li>
+                <li><strong>Police Helpline:</strong> Dial 999 for emergency assistance in case of violence.</li>
+                <li><strong>Domestic Violence Helpline:</strong> Call 1195 for confidential help.</li>
+            </ul>
+            <a href="https://www.fidakenya.org" class="cta-button">Learn More About FIDA Kenya</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Femicide Awareness Kenya | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Get the context of the canvas element
+    const ctx = document.getElementById('femicidePieChart').getContext('2d');
+
+    // Create the pie chart
+    const femicidePieChart = new Chart(ctx, {
+        type: 'pie', // The type of chart: pie chart
+        data: {
+            labels: [
+                'Over 2000 women killed annually', 
+                '80% committed by intimate partners', 
+                'Years of abuse before fatal incident'
+            ],
+            datasets: [{
+                label: 'Femicide Statistics in Kenya',
+                data: [35, 45, 20], // Percentages based on the text (adjust as necessary)
+                backgroundColor: ['#ff6347', '#ffcc00', '#4caf50'], // Colors for each section
+                borderColor: ['#ffffff', '#ffffff', '#ffffff'], // Border color for each section
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true, // Make the chart responsive
+            maintainAspectRatio: true, // Maintain aspect ratio to avoid stretching
+            plugins: {
+                legend: {
+                    position: 'top', // Position the legend at the top
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(tooltipItem) {
+                            return tooltipItem.label + ': ' + tooltipItem.raw + '%';
+                        }
+                    }
+                }
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
