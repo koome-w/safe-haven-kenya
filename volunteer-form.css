@@ -1,14 +1,22 @@
+body{
+    background-color: #f8f9fa;
+}
 form {
     max-width: 500px;
     margin: 50px auto; /* Centers the form */
     padding: 20px;
-    /*background-color: #f9f9f9;*/
-    background: rgba(249, 219, 232, 0.767); /* Background with transparency using color #dcd2e1 */
+    background: #f8f5ee;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     
+}
+
+form h2 {
+    text-align: center;
+    /*color: #e61d3f;*/
+    color: black;
 }
 
 form label,

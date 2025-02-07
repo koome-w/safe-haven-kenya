@@ -7,8 +7,7 @@ body {
 }
 
 header {
-    /*background-color: #ff6347;*/
-    background-color: #e46d58;
+    background-color: #e61d3f;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -47,7 +46,7 @@ section:hover {
 
 
 .section-title {
-    color: #ff6347;
+    color: #e61d3f;
     font-size: 2rem;
     margin-bottom: 20px;
 }
@@ -69,7 +68,7 @@ section:hover {
 }
 
 .cta-button {
-    background-color: #ff6347;
+    background-color: #e61d3f;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -94,7 +93,7 @@ footer {
 }
 
 footer a {
-    color: #ff6347;
+    color: #e61d3f;
     text-decoration: none;
 }
 
@@ -103,7 +102,7 @@ footer a:hover {
 }
 
 .highlight {
-    color: #ff6347;
+    color: #e61d3f;
     font-weight: bold;
 }
 
